@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='{{ lang }}'>
+  <title>{{ title }}</title>
+  <style type='text/css'>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .site {
+      background-color: #000000;
+      background-image: url("/image/background.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center; 
+    }
+
+    .site::after {
+      display: block;
+      content: " ";
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center; 
+      background-image: url("/image/noise.gif");
+      opacity: 0.05;
+    }
+  </style>
+
+  <body class='site'>
+    <main>
+      {{ contents }}
+    </main>
+  </body>
+</html>

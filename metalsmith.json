@@ -1,0 +1,19 @@
+{
+  "source": "content",
+  "destination": "dist",
+  "clean": false,
+
+  "metadata": {
+  },
+
+  "plugins": {
+    "metalsmith-redirect": {
+      "index": "no/index.html"
+    },
+
+    "metalsmith-templates": {
+      "engine": "swig",
+      "directory": "template"
+    }
+  }
+}
