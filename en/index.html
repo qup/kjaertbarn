@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <title>Kjaert Barn</title>
+  <style type='text/css'>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .site {
+      z-index: 0;
+      background-color: #000000;
+      background-image: url("/image/background.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    .site::after {
+      z-index: 1;
+      display: block;
+      content: " ";
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-image: url("/image/noise.gif");
+      opacity: 0.0025;
+      pointer-events: none;
+    }
+
+    .youtube {
+      margin-top: 40px;
+      display: block;
+      text-align: center;
+      margin-top: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.25;
+    }
+
+    .youtube:hover,
+    .youtube:focus {
+      opacity: 1;
+
+    }
+  </style>
+
+  <body class='site'>
+    <main>
+      
+<iframe class='youtube' width="90%" height="auto" src="//www.youtube.com/embed/AGuWm9PJrlI?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+    </main>
+  </body>
+</html>
